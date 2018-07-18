@@ -1,0 +1,24 @@
+<div class="create-container">
+    <div class="create-card">
+    <div class="create-column">
+        <div class="single-item-contents">
+          <div id="item-title" class="single-item-title">
+              {{singleItem.title}}
+          </div>
+          <div class="single-item-img">
+            <img src="{{singleItem.imageUrl}}" alt="{{singleItem.description}}">
+          </div>
+          <div id="item-description" class="single-item-description">
+            {{singleItem.description}}
+          </div>
+          <div class="single-item-navigation">
+            <a href="/">
+              <img class="back-arrow" src="/img/back.svg" alt="back">
+            </a>
+            <a href="/update/{{singleItem._id}}" class="button update-button">
+                Update
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
